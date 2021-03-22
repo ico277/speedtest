@@ -1,4 +1,15 @@
 # speedtest
 a cli speedtest that uses multithreading
 # compiling & installing
-`# make install`
+only compiling 
+```
+$ make build
+```
+compiling and installing
+```
+# make install
+```
+compiling, installing and running
+```
+# make run
+```
