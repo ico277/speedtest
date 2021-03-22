@@ -2,20 +2,23 @@
 #include <thread>
 #include "util.h"
 
-void ThreadFunc(int &a, int64_t startTime)
+void ThreadFunc(unsigned long long int &a, int64_t startTime)
 {
-	while (getTime() - startTime != 0)
+	for (long i = 0; getTime() - startTime != 0; i++)
 	{
-		a++;
+		if (isPrime(i))
+		{
+			a++;
+		}
 	}
 }
 
-
 int main(int argc, char *argv[])
 {
-	int score = 0;
+	unsigned long long int score = 5;
 	int CPUs = std::thread::hardware_concurrency();
-	if (CPUs == 0) CPUs = 2;
+	if (CPUs == 0)
+		CPUs = 2;
 	int secs = 30;
 	parseArgs(secs, CPUs, argc, argv);
 
