@@ -105,4 +105,5 @@ bool isPrime(long n)
     }
     if (flag == 0)
         return true;
+    return false;
 }

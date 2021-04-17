@@ -1,6 +1,6 @@
 #pragma once
 
-#define VERSION "0.1.0-BETA"
+#define VERSION "1.0.0-RELEASE"
 #ifdef __linux__
 #define OS "Linux"
 #elif __FreeBSD__

@@ -1,15 +1,15 @@
 # speedtest
-a cli speedtest that uses multithreading
+a cli CPU speedtest that can use multiple CPU cores
 # compiling & installing
-only compiling 
+compile
 ```
 $ make
 ```
-compiling and installing
+compile and install
 ```
 $ make install # by default, install path is set to /usr/local/bin/. Use PREFIX=PATH to override.
 ```
-compiling, installing and running
+compile, install, run
 ```
 $ make run
 ```
